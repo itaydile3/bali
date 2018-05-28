@@ -1,0 +1,212 @@
+body{
+	margin: 0 auto;
+	font-family: 'Assistant', sans-serif;
+}
+.top{
+	height: 68px;
+	text-align: center;
+}
+.top img{
+	transform: translateY(50%);
+}
+.sub-container{
+	text-align: center;
+	padding-top: 7.8%;
+	padding-right: 6%;
+	margin-left: 49%;
+}
+.sub-container .nav-dots_cont{
+    position: absolute;
+    height: 10vw;
+    width: 4vw;
+    right: 0;
+    bottom: 12vw;
+}
+.sub-container .nav-dots_cont .dot{
+display: block;
+    border: 2px solid white;
+    height: 10px;
+    border-radius: 26px;
+    width: 10px;
+    margin: auto;
+    margin-bottom: 1vw;
+    cursor: pointer;
+}
+.sub-container .nav-dots_cont .dot.selected{background: white;}
+section{
+	width: 100%;
+	margin: auto;
+}
+section#page1{
+	background: url(../images/section1-back.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+section#page1 .title{
+	color: white;
+	font-size: 4.6vw;
+	word-spacing: 1px;
+	font-weight: bolder;
+	line-height: 5.45vw;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+	text-indent: 38px;
+}
+section#page1 .subtitle{
+	font-size: 3.5vw;
+	color: white;
+	font-weight: bolder;
+	line-height: 3vw;
+	margin-bottom: 1.2vw;
+	text-align: right;
+	margin-top: 3px;
+}
+section#page1 .box{
+	font-size: 2.8vw;
+	font-weight: bolder;
+	width: 69%;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+	margin: auto;
+	word-spacing: 2px;
+	color: #00ef54;
+	background: #003a68;
+	direction: rtl;
+	padding: 1vw;
+	transform: translateX(2.3vw);
+}
+section#page1 .arrow1{
+	position: absolute;
+	text-align: center;
+	bottom: 6%;
+	width: 100%;
+}
+section#page1 .arrow1 img{
+	cursor: pointer;
+	width: 8.8%;
+}
+section#page2{
+	background: url(../images/section2-back.jpg) no-repeat;
+	background-size: contain;
+}
+section#page2 .sec2contain{display: table; width: 100%;}
+section#page2 .sec2contain .right-content{
+	display: table-cell;
+	width: 50%;
+	text-align: right;
+	padding: 4.5% 5% 0;
+	color: #ffffff;
+	direction: rtl;
+}
+section#page2 .sec2contain .right-content .right-title{
+	font-size: 3.3vw;
+	padding-right: 19px;
+	word-spacing: 9px;
+	letter-spacing: 1px;
+	font-weight: bolder;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white
+}
+section#page2 .sec2contain .right-content .right-text{font-size: 2.2vw;}
+section#page2 .sec2contain .right-content .right-text ul{
+	margin-top: 7px;
+}
+section#page2 .sec2contain .left-content{
+	display: table-cell; 
+	width: 50%;
+	padding-top: 5%;
+}
+section#page2 .sec2contain .left-content .left-text{
+	text-align: center;
+	font-size: 2.4vw;
+	line-height: 2.6vw;
+	direction: rtl;
+	font-weight: bolder;
+}
+section#page2 .sec2contain .left-content .left-image{
+	margin: auto;
+	text-align: center;
+	margin-bottom: 4%;
+}
+
+section#page3{
+	background: url(../images/section3-back.jpg) no-repeat;
+	background-size: contain;
+}
+section#page3 h1{
+	text-align: center;
+	font-size: 3.5vw;
+	direction: rtl;
+	margin: 1.6vw;
+	font-weight: bolder;1
+}
+section#page3 .icons-container{
+	display: block;
+	width: 100%;
+	direction: rtl;
+	margin: auto;
+	text-align: center;
+	margin-top: 6vw;
+}
+section#page3 .icons-container .box{
+	display: inline-block;
+	width: 28%;
+	margin-bottom: 10.5vw;
+}
+section#page3 .icons-container .box .txt-box{
+	display: table;
+	font-size: 3.2vw;
+	padding: 0px 12px;
+	line-height: 3.2vw;
+	margin-top: 3vw;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	width: 89%;
+	margin: 3vw auto 0;
+}
+section#page3 .icons-container .box .icon_cont{
+	
+}
+section#page3 .icons-container .box .icon_cont img{
+	
+}
+
+section#page4{
+	background: url(../images/section4-back.jpg) no-repeat;
+	background-size: contain;
+}
+section#page4 .sec4-cont{
+	color: white;
+	direction: rtl;
+	text-align: center;
+	margin-right: 53%;
+	padding: 0 8%;
+}
+section#page4 .sec4-cont .sec4title{
+	font-size: 4.0vw;
+	font-weight: bolder;
+	padding-top: 27%;
+}
+section#page4 .sec4-cont .sec4content{
+	font-size: 2.5vw;
+	line-height: 3.1vw;
+}
+section#page5{}
+section#page5 .credits{
+	text-align: center;
+	padding: 1vw;
+	font-size: 1.2vw;
+}
+
+body.admin{
+	direction: rtl;
+}
+body.admin label{
+	width: 86px;
+	display: inline-block;
+	padding: 12px;
+}
+body.admin input,body.admin textarea{
+	width: 500px;
+}

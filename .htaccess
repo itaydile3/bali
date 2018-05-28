@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /bali/
+RewriteCond %{REQUEST_FILENAME} !/(admin|css|fonts|ico|include|js|images)/
+RewriteCond %(REQUEST_FILENAME) !-f 
+RewriteCond %(REQUEST_FILENAME) !-d
+
+RewriteRule ^(.+)$ index.php?uri=$1 [QSA,L]
