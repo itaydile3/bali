@@ -1,4 +1,5 @@
 window.onload = function () {
+
 	var admin = new Vue({
 		el: '#admin',
 		data: {
@@ -27,16 +28,17 @@ window.onload = function () {
 			}
 		},
 		mounted(){
-			
+			this.getVals();
 		},
 		methods: {
 			send: function(event){
-				var data_vals = {};
-				$.each(this.values, function(index, el){
+				var data_vals = this.values;				
+				$.each(data_vals, function(index, el){
 					if(el != ''){
 						data_vals[index] = el;
 					}
 				});
+
 				$.ajax({
 					url: 'update',
 					type: 'POST',
@@ -48,7 +50,24 @@ window.onload = function () {
 				
 				event.preventDefault();
 			},
+			getVals: function(event){
+				var globalThis = this;
+				$.ajax({
+					url: 'showJson',
+					type: 'GET',
+				})
+				.done(function(data){
+					var dataArray = JSON.parse(data);
+					var result = {};
+					Object.keys(dataArray).map(function(key, index) {
+						Object.keys(dataArray[key]).map(function(key2, index2) {
+							result[key + '_' + key2] = dataArray[key][key2];
+						});
+					});
+					globalThis.values = result;
+				})
+			},
 		}
-	})
-	// CKEDITOR.replace( 'editor1' );
+	});
+	
 }

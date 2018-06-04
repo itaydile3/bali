@@ -26,18 +26,9 @@
 			<div class="sec2contain">
 				<div class="left-content">
 					<div class="left-image">
-						<img src="./images/bali-logo.jpg" alt="" />
+						<img src="./images/bali-logo.png" alt="" />
 					</div>
-					<div class="left-text">{{texts.section2.leftText}}
-						<div v-if="texts.section2.leftText.length == 0">
-							כרטיס אשראי חד פעמי שמאפשר <br>
-							לך לבצע קניות בחו״ל, <br>
-							בארץ וברשת<br>
-							באופן אנונימי ומאובטח, <br>
-							בנוחות ובקלות.<br>
-							לרכישה בחנויות המורשות <br>
-							ברחבי הארץ
-						</div>
+					<div class="left-text" v-html="texts.section2.leftText">
 					</div>
 				</div>
 				<div class="right-content">
