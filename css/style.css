@@ -16,21 +16,27 @@ body{
 	margin-left: 49%;
 }
 .sub-container .nav-dots_cont{
-    position: absolute;
-    height: 10vw;
-    width: 4vw;
-    right: 0;
-    bottom: 12vw;
+	position: fixed;
+	height: 10vw;
+	width: 4vw;
+	right: 0;
+    top: 23.8vw;
 }
 .sub-container .nav-dots_cont .dot{
-display: block;
-    border: 2px solid white;
-    height: 10px;
-    border-radius: 26px;
-    width: 10px;
-    margin: auto;
-    margin-bottom: 1vw;
-    cursor: pointer;
+	display: block;
+	border: 2px solid white;
+	height: 10px;
+	border-radius: 26px;
+	width: 10px;
+	margin: auto;
+	margin-bottom: 1vw;
+	cursor: pointer;
+}
+.sub-container .nav-dots_cont.rev .dot{
+	background-color: #d6c6c6;
+}
+.sub-container .nav-dots_cont.rev .dot.selected{
+	background-color: #0bbbff;	
 }
 .sub-container .nav-dots_cont .dot.selected{background: white;}
 section{
@@ -69,7 +75,7 @@ section#page1 .box{
 	-webkit-text-stroke-color: white;
 	margin: auto;
 	word-spacing: 2px;
-	color: #00ef54;
+	color: #ffffff;
 	background: #003a68;
 	direction: rtl;
 	padding: 1vw;
@@ -114,7 +120,6 @@ section#page2 .sec2contain .right-content .right-text ul{
 section#page2 .sec2contain .left-content{
 	display: table-cell; 
 	width: 50%;
-	padding-top: 5%;
 }
 section#page2 .sec2contain .left-content .left-text{
 	text-align: center;
@@ -126,7 +131,8 @@ section#page2 .sec2contain .left-content .left-text{
 section#page2 .sec2contain .left-content .left-image{
 	margin: auto;
 	text-align: center;
-	margin-bottom: 4%;
+	margin-bottom: 8.5%;
+	transform: translateY(2.5vw);
 }
 
 section#page3{

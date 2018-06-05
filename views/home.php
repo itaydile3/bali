@@ -10,7 +10,7 @@
 				<div class="box">
 					<span>{{texts.section1.boxText}}</span>
 				</div>
-				<div class="nav-dots_cont">
+				<div class="nav-dots_cont" v-bind:class="{rev: isActive == 3}">
 					<a v-on:click="isActive = 1" v-bind:class="{dot, selected: isActive == 1}" href="#" v-scroll-to="'#page1'"></a>
 					<a v-on:click="isActive = 2" v-bind:class="{dot, selected: isActive == 2}" href="#" v-scroll-to="'#page2'"></a>
 					<a v-on:click="isActive = 3" v-bind:class="{dot, selected: isActive == 3}" href="#" v-scroll-to="'#page3'"></a>

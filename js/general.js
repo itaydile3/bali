@@ -1,4 +1,5 @@
 window.onload = function () {
+
 	var winHeight = window.innerHeight;
 	var topHeight = $('.top').height();
 	var imageInfo;
@@ -44,15 +45,34 @@ window.onload = function () {
 				},
 			},
 			winHeight: winHeight,
-			isActive: undefined,
+			isActive: 1,
 			dot: true,
+			scrolled: false,
+			sectionScrollVals: {
+				section1: '',
+				section2: '',
+				section3: '',
+				section4: '',
+			},
+			lastScrollTop: 0,
 		},
 		mounted() {
 			axios.get("images_info").then(response => 
 				this.calc(response.data)
 				);
+
 			axios.get("showJson")
-			.then(response => {this.texts = response.data})
+			.then(response => {this.texts = response.data});
+			
+			this.sectionScrollVals.section1 = $('section#page1').position().top;
+			this.sectionScrollVals.section2 = $('section#page2').position().top;
+			this.sectionScrollVals.section3 = $('section#page3').position().top;
+			this.sectionScrollVals.section4 = $('section#page4').position().top;
+
+			window.addEventListener('scroll', this.handleScroll);
+		},
+		destroyed () {
+			window.removeEventListener('scroll', this.handleScroll);
 		},
 		methods: {
 			calc: function (resp){
@@ -87,6 +107,13 @@ window.onload = function () {
 				axios.get("show_json").then(response => 
 					this.globalJson = response.data
 					);
+			},
+			handleScroll () {
+				this.scrolled = window.scrollY + 100;
+				if (this.scrolled > this.sectionScrollVals.section1 && this.scrolled < this.sectionScrollVals.section2) {this.isActive = 1}
+				if (this.scrolled > this.sectionScrollVals.section2 && this.scrolled < this.sectionScrollVals.section3) {this.isActive = 2}
+				if (this.scrolled > this.sectionScrollVals.section3 && this.scrolled < this.sectionScrollVals.section4) {this.isActive = 3}
+				if (this.scrolled > this.sectionScrollVals.section4) {this.isActive = 4}
 			},
 		},
 	});
