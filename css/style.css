@@ -202,9 +202,18 @@ section#page5{}
 section#page5 .credits{
 	text-align: center;
 	padding: 1vw;
+	padding-bottom: 0;
 	font-size: 1.2vw;
 }
-
+section#page5 .terms{
+    margin: auto;
+    text-align: center;
+    padding: 5px 0;
+}
+section#page5 .terms a{
+	color: #626262;
+	font-size: 1vw;
+}
 body.admin{
 	direction: rtl;
 }
