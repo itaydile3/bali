@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /bali/
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !/(admin|css|fonts|ico|include|js|images)/
 RewriteCond %(REQUEST_FILENAME) !-f 
 RewriteCond %(REQUEST_FILENAME) !-d

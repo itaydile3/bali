@@ -16,7 +16,7 @@ class Route
                 if($current_type == 'views') {
                     require("common/header.php");
                 }
-                require("/$current_type/".$value['dest'].'.php');
+                require("$current_type/".$value['dest'].'.php');
             }   
         }
     }
