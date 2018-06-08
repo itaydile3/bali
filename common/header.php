@@ -8,6 +8,7 @@
 	<script src="/bali/js/components/ckeditor.js"></script>
 	<?php $adminJS =  $_GET['uri'] == 'admin' ? '<script src="/bali/js/admin.js" type="text/javascript"></script>' : ''; echo $adminJS; ?>
 	<?php $indexJS =  $_GET['uri'] == 'index.php' ? '<script src="/bali/js/general.js" type="text/javascript"></script>' : ''; echo $indexJS; ?>
+	<?php $indexJS =  $_GET['uri'] == 'terms' ? '<script src="/bali/js/terms.js" type="text/javascript"></script>' : ''; echo $indexJS; ?>
 	<script src="https://unpkg.com/vue-ckeditor2"></script>
 	<link rel="stylesheet" type="text/css" href="/bali/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">

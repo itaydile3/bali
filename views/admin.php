@@ -83,9 +83,13 @@
 					</div>
 				</div>
 			</div>
+			<label for="terms_content">תקנון ותנאי שימוש</label>
+			<ckeditor v-model="values.terms_content" id="terms_content" :value="values.terms_content"></ckeditor>
+			<br>
 			<button type="button" v-on:click="send" >send</button>
 		</form>
 	</div>
+
 
 </body>
 </html>

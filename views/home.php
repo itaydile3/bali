@@ -96,7 +96,7 @@
 		</section>
 		<section id="page5">
 			<div class="credits"> 03-5273300 | info@experto.win |  כנרת 9, מגדל בסר 3, בני ברק  </div>
-			<div class="terms"><a href="#">תנאי שימוש</a></div>
+			<div class="terms"><a href="terms" target="_blank">תנאי שימוש</a></div>
 		</section>
 
 	</div>

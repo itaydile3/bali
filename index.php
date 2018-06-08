@@ -7,6 +7,7 @@ $route->add('admin', 'admin', 'views');
 $route->add('images_info', 'images_info','functions');
 $route->add('showJson', 'showJson','functions');
 $route->add('update', 'update','functions');
+$route->add('terms', 'terms', 'views');
 
 $route->submit();
 

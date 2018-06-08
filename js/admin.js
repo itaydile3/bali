@@ -24,7 +24,8 @@ window.onload = function () {
 				section3_icon5Text: '',
 				section3_icon6Text: '',
 				section4_title: '',
-				section4_content: ''
+				section4_content: '',
+				terms_content: ''
 			}
 		},
 		mounted(){

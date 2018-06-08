@@ -43,6 +43,9 @@ window.onload = function () {
 					title: "",
 					content: ""
 				},
+				terms: {
+					content: ""
+				},
 			},
 			winHeight: winHeight,
 			isActive: 1,
@@ -117,6 +120,8 @@ window.onload = function () {
 			},
 		},
 	});
+
+
 	VueScrollTo.setDefaults({
 		container: "body",
 		duration: 500,
