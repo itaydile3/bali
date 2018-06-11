@@ -226,6 +226,11 @@ body.admin input,body.admin textarea{
 	width: 500px;
 }
 
+#terms{
+	margin: 1% 5%;
+    padding: 0 5%;
+    border: 3px solid black;
+}
 #terms h1{
 	text-align: center;
 	margin: 20px 0;

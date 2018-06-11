@@ -6,7 +6,7 @@
 		public $images_info = array();
 
 		public function __construct(){
-			$this->image_path =  'http://'.$_SERVER['SERVER_NAME']."/images/";
+			$this->image_path =  "images/";
 		}
 
 		public function CollectImages($path)

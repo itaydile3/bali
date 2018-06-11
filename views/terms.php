@@ -1,5 +1,5 @@
 <body>
-	<div id="terms">
+	<div id="terms" v-bind:style="{height: height}">
 		<div class="terms_container">
 			<h1>תקנון אתר ותנאי שימוש</h1>
 		</div>

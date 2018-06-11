@@ -4,6 +4,7 @@ window.onload = function () {
 		el: '#terms',
 		data: {
 			terms_content: '',
+			height: window.innerHeight,
 		},
 		mounted() {
 			axios.get("showJson")
