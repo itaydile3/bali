@@ -161,7 +161,7 @@ section#page3 .icons-container .box{
 }
 section#page3 .icons-container .box .txt-box{
 	display: table;
-	font-size: 3.2vw;
+	font-size: 2.7vw;
 	padding: 0px 12px;
 	line-height: 3.2vw;
 	margin-top: 3vw;
@@ -175,7 +175,7 @@ section#page3 .icons-container .box .icon_cont{
 	
 }
 section#page3 .icons-container .box .icon_cont img{
-	
+	width: 22%;
 }
 
 section#page4{

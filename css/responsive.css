@@ -1,0 +1,89 @@
+@media screen and (max-width: 765px) {
+	body::after {
+		content: '';
+		background: url(../images/mobile/demo.png);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		opacity: 0.2;
+	}
+	section#page1{
+		background: url(../images/mobile/section1-back.jpg) no-repeat;
+		background-size: contain;
+		position: relative;
+	}
+	section#page1 .title{
+		font-size: 7vw;
+		line-height: 8.6vw;
+		text-align: center;
+		text-indent: 0;
+		letter-spacing: 1px;
+	}
+	section#page1 .subtitle{
+		font-size: 5.5vw;
+		text-align: center;
+		line-height: 1.2;
+		margin-top: 0;
+		margin-bottom: 3.2vw;
+	}
+	section#page1 .box{
+		transform: unset;
+		font-size: 5.2vw;
+	}
+	section#page1 .arrow1{
+		bottom: 2.8%;
+	}
+	section#page2{
+		display: block;
+		position: relative;
+		background: url(../images/mobile/section2-back.jpg) no-repeat;
+		background-size: contain;
+	}
+	section#page2 .sec2contain{display: block;}
+	section#page2 .sec2contain .left-content{
+		display: block;
+		margin: auto;
+	}
+	section#page2 .sec2contain .right-content{
+		display: block;
+		margin: auto;
+		width: 70%;
+		padding: 4% 0;
+	}
+	section#page2 .sec2contain .right-content .right-title{
+		font-size: 5.0vw;
+		padding: unset;
+		text-align: center;
+		word-spacing: 5px;
+	}
+	
+
+	section#page4{
+		background: url(../images/mobile/section4-back.jpg) no-repeat;
+		background-size: contain;
+	}
+	.nav-dots_cont{
+		display: none;
+	}
+	.sub-container{
+		margin: 0;
+		padding: 11%;
+		padding-top: 47.2%;
+	}
+	.top{
+		height: unset;
+	}
+	.top img{
+		transform: unset;
+		width: 39%;
+		padding: 10px;
+	}
+
+	section#page2 .sec2contain .left-content .left-image{
+
+	}
+
+}

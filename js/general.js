@@ -1,6 +1,7 @@
 window.onload = function () {
 
 	var winHeight = window.innerHeight;
+	var isMobile = window.innerWidth < 769 ? true : false;
 	var topHeight = $('.top').height();
 	var imageInfo;
 
@@ -15,9 +16,9 @@ window.onload = function () {
 			},
 			texts: {
 				section1: {
-					headTitle: 'כרטיס אשראי חד פעמי ישראלי ובינלאומי ',
-					subTitle: 'לקניות בחו"ל⚫בארץ⚫ובאינטרנט',
-					boxText: '500 ש"ח או 1000 ש"ח'
+					headTitle: '',
+					subTitle: '',
+					boxText: ''
 				},
 				section2: {
 					rightTitle: '',
@@ -58,6 +59,7 @@ window.onload = function () {
 				section4: '',
 			},
 			lastScrollTop: 0,
+			resp: isMobile,
 		},
 		mounted() {
 			axios.get("images_info").then(response => 
@@ -71,8 +73,10 @@ window.onload = function () {
 			this.sectionScrollVals.section2 = $('section#page2').position().top;
 			this.sectionScrollVals.section3 = $('section#page3').position().top;
 			this.sectionScrollVals.section4 = $('section#page4').position().top;
-
 			window.addEventListener('scroll', this.handleScroll);
+
+			this.resp ? $('#page2 .right-content').insertBefore('#page2 .left-content') : null;
+
 		},
 		destroyed () {
 			window.removeEventListener('scroll', this.handleScroll);
@@ -112,7 +116,7 @@ window.onload = function () {
 					);
 			},
 			handleScroll () {
-				this.scrolled = window.scrollY + 100;
+				this.scrolled = window.scrollY;
 				if (this.scrolled > this.sectionScrollVals.section1 && this.scrolled < this.sectionScrollVals.section2) {this.isActive = 1}
 				if (this.scrolled > this.sectionScrollVals.section2 && this.scrolled < this.sectionScrollVals.section3) {this.isActive = 2}
 				if (this.scrolled > this.sectionScrollVals.section3 && this.scrolled < this.sectionScrollVals.section4) {this.isActive = 3}
