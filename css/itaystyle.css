@@ -1,0 +1,23 @@
+.ui-layout{
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+}
+.ui-layout .ui-layout__section--primary{
+	max-width: 100%;
+	min-width: 100%;
+}
+.ui-layout .next-ui .section-content{
+	padding: 0px;
+	margin: 0;
+}
+.ui-layout table tbody{
+	display: inline-block;
+	padding: 0;
+	width: 234px;
+}
+.ui-layout table tbody tr{
+	display: inline-table;
+	padding: 0;
+	margin: 0;
+}

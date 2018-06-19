@@ -1,7 +1,7 @@
 <body>
 	<div class="container" id="app">
 		<div class="top">
-			<img v-bind:src="[!resp ? './images/experto_logo.jpg' : './images/Mobile/experto_logo.png']" alt="logo" /> 
+			<img v-bind:src="[!resp ? './images/experto_logo.jpg' : './images/mobile/experto_logo.png']" alt="logo" /> 
 		</div>
 		<section id="page1" v-bind:style="{height: heights.section1}">
 			<div class="sub-container">

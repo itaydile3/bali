@@ -75,7 +75,10 @@ window.onload = function () {
 			this.sectionScrollVals.section4 = $('section#page4').position().top;
 			window.addEventListener('scroll', this.handleScroll);
 
-			this.resp ? $('#page2 .right-content').insertBefore('#page2 .left-content') : null;
+			if (this.resp) {
+				$('#page2 .right-content').insertBefore('#page2 .left-content');
+				$('#page2 .sec2contain .right-content .right-text ul li').wrapInner("<span></span>");
+			}
 
 		},
 		destroyed () {
