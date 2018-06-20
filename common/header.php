@@ -8,6 +8,7 @@
 	<script src="/js/components/ckeditor.js"></script>
 	<?php $adminJS =  $_GET['uri'] == 'admin' ? '<script src="/js/admin.js" type="text/javascript"></script>' : ''; echo $adminJS; ?>
 	<?php $faq_adminJS =  $_GET['uri'] == 'faq-admin' ? '<script src="/js/faq-admin.js" type="text/javascript"></script>' : ''; echo $faq_adminJS; ?>
+	<?php $faq =  $_GET['uri'] == 'faq' ? '<script src="/js/faq.js" type="text/javascript"></script>' : ''; echo $faq; ?>
 	<?php $indexJS =  $_GET['uri'] == 'index.php' ? '<script src="/js/general.js" type="text/javascript"></script>' : ''; echo $indexJS; ?>
 	<?php $termsJS =  $_GET['uri'] == 'terms' ? '<script src="/js/terms.js" type="text/javascript"></script>' : ''; echo $termsJS; ?>
 	<script src="https://unpkg.com/vue-ckeditor2"></script>

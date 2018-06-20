@@ -20,7 +20,7 @@ body{
 	height: 10vw;
 	width: 4vw;
 	right: 0;
-    top: 23.8vw;
+	top: 23.8vw;
 }
 .sub-container .nav-dots_cont .dot{
 	display: block;
@@ -206,9 +206,9 @@ section#page5 .credits{
 	font-size: 1.2vw;
 }
 section#page5 .terms{
-    margin: auto;
-    text-align: center;
-    padding: 5px 0;
+	margin: auto;
+	text-align: center;
+	padding: 5px 0;
 }
 section#page5 .terms a{
 	color: #626262;
@@ -228,8 +228,8 @@ body.admin input,body.admin textarea{
 
 #terms{
 	margin: 1% 5%;
-    padding: 0 5%;
-    border: 3px solid black;
+	padding: 0 5%;
+	border: 3px solid black;
 }
 #terms h1{
 	text-align: center;
@@ -254,6 +254,58 @@ body.faq-admin textarea{
 	height: 60px;
 }
 
- body.faq-admin .create_q{
+body.faq-admin .create_q{
 
- }
+}
+body.faq .faq-container{
+	direction: rtl;
+}
+body.faq h1{
+	text-align: center;
+}
+
+body.faq .faq-row {
+	background: #f1f1f1;
+	padding: 5px 12px;
+	margin-bottom: 8px;
+	position: relative;
+}
+body.faq .faq-row .plus_icon {
+	width: 34px;
+	height: 34px;
+	max-height: 34px;
+	display: inline-block;
+	background-image: url("../images/plus_icon.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	transition: top 0.5s;
+}
+body.faq .faq-row .plus_icon.open {
+	top: 30px;
+	background: url("../images/minus_icon.png") no-repeat;
+	transition: all 0.5s;
+}
+body.faq .faq-row.open {
+	background: #e6f7ff;
+}
+body.faq .faq-row.open .views-field-title {
+	color: #1cb5ee;
+}
+body.faq .faq-row .views-field-title {
+	margin: 9px;
+	font-size: 1.3em;
+	width: 88%;
+}
+body.faq .faq-row .views-field-title span{
+	margin-right: 42px;
+}
+body.faq .faq-row .views-field-body {
+	display: none;
+	margin: 9px;
+	width: 93%;
+}

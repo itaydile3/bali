@@ -8,6 +8,7 @@ $route = new Route();
 $route->add('index.php', 'home', 'views');
 $route->add('admin', 'admin', 'views');
 $route->add('faq-admin', 'faq-admin', 'views');
+$route->add('faq', 'faq', 'views');
 // }
 $route->add('images_info', 'images_info','functions');
 $route->add('showJson', 'showJson','functions');
