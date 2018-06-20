@@ -241,3 +241,19 @@ body.admin input,body.admin textarea{
 	padding: 1% 5%;
 	font-weight: 500;
 }
+
+body.faq-admin{
+	direction: rtl;
+}
+
+body.faq-admin textarea, body.faq-admin input  {
+	width: 60%;
+}
+body.faq-admin textarea{
+	vertical-align: top; 
+	height: 60px;
+}
+
+ body.faq-admin .create_q{
+
+ }

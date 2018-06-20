@@ -66,9 +66,10 @@ window.onload = function () {
 				this.calc(response.data)
 				);
 
-			axios.get("showJson")
-			.then(response => {this.texts = response.data});
-			
+			const params = new URLSearchParams();
+			params.append('type', 'home');
+			axios.post('showJson', params).then(response => {this.texts = response.data});
+
 			this.sectionScrollVals.section1 = $('section#page1').position().top;
 			this.sectionScrollVals.section2 = $('section#page2').position().top;
 			this.sectionScrollVals.section3 = $('section#page3').position().top;

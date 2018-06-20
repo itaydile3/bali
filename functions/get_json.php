@@ -7,6 +7,11 @@
 			return $this->jsonContents;
 		}
 
+		public function getFaqJson(){
+			$this->jsonContents = file_get_contents('faq.json');
+			return $this->jsonContents;
+		}
+
 	}
 
 ?>
