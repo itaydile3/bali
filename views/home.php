@@ -10,6 +10,9 @@
 				<div class="box">
 					<span>{{texts.section1.boxText}}</span>
 				</div>
+				<div class="faq-btn">
+					<a href="/faq" target="_blank">שאלות נפוצות</a>
+				</div>
 				<div class="nav-dots_cont" v-bind:class="{rev: isActive == 3}">
 					<a v-on:click="isActive = 1" v-bind:class="{dot, selected: isActive == 1}" href="#" v-scroll-to="'#page1'"></a>
 					<a v-on:click="isActive = 2" v-bind:class="{dot, selected: isActive == 2}" href="#" v-scroll-to="'#page2'"></a>
@@ -17,9 +20,11 @@
 					<a v-on:click="isActive = 4" v-bind:class="{dot, selected: isActive == 4}" href="#" v-scroll-to="'#page4'"></a>
 				</div>
 			</div>
-			<a class="arrow1" href="#" v-scroll-to="'#page2'">
-				<img src="./images/down-arrow.png" alt="" class="">
-			</a>
+			<div class="arrow-container">
+				<a class="arrow1" href="#" v-scroll-to="'#page2'">
+					<img src="./images/down-arrow.png" alt="" class="">
+				</a>
+			</div>
 			<!-- <div class="arrow1"></div> -->
 		</section>
 		<section id="page2" v-bind:style="{height: heights.section2}">

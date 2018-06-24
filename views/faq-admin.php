@@ -3,13 +3,14 @@
 	<div id="faq-admin">
 		<!-- {{values.question1.q}} -->
 		<form>
-			<div v-for="value in values" class="create_q" :id="'question' + q_num">
+			<div v-for="value in values" class="create_q" :id="'question' + value.id">
 				<h3>שאלה {{value.id}}</h3>
 				<label :for="'question' + value.id">שאלה</label>
-				<input type="text" :name="'question' + q_num" v-model="value.q" />
+				<input type="text" :name="'question' + value.id" v-model="value.q" />
 				<hr style="visibility: hidden; clear: both;">
-				<label :for="'answer' + q_num">תשובה</label>
-				<textarea :id="'answer' + q_num" v-model="value.a"></textarea>
+				<label :for="'answer' + value.id">תשובה</label>
+				<!-- <textarea :id="'answer' + value.id" v-model="value.a"></textarea> -->
+				<ckeditor :id="'answer' + value.id" v-model="value.a"></ckeditor>
 				<button type="button" v-on:click="deleteQuestion('question' + value.id)">מחיקה</button>
 			</div>
 			<button type="button" v-on:click="send" >send</button>

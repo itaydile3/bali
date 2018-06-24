@@ -25,8 +25,8 @@ window.onload = function () {
 				this.q_indicator = $(element).closest('.faq-row').attr('id');
 				if(this.answerShown){
 					$(element).closest('.faq-row').find('.views-field-body').slideUp();
-					$(element).closest('.faq-row').removeClass('open');
-					$(element).removeClass('open');
+					// $(element).closest('.faq-row').removeClass('open');
+					// $(element).removeClass('open');
 				} else {
 					$(element).closest('.faq-row').find('.views-field-body').slideDown();
 				}

@@ -7,8 +7,15 @@ window.onload = function () {
 			height: window.innerHeight,
 		},
 		mounted() {
-			axios.get("showJson")
-			.then(response => {this.terms_content = response.data.terms.content});
+				$.ajax({
+					url: 'showJson',
+					type: 'POST',
+					data: {type: 'home'}
+				})
+			.done(function (response) {
+				let json_str = JSON.parse(response);
+				this.terms_content = json_str.terms.content;
+			})
 		},
 	});
 

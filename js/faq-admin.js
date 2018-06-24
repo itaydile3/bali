@@ -41,9 +41,8 @@ window.onload = function () {
 				Vue.delete(this.values, id);
 				let currentJson = JSON.parse(JSON.stringify(this.values));
 				adminFaq.$forceUpdate();
-				console.log("AAA", this.values);
 				this.send();
-			}
+			},
 		}
 	});
 }

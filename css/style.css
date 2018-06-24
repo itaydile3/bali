@@ -48,6 +48,20 @@ section#page1{
 	background-size: cover;
 	position: relative;
 }
+section#page1 .faq-btn{
+	background-color: #51bd9b;
+	padding: 6px 15px;
+	margin: 5.6vw auto 0;
+	transform: translateX(33px);
+	cursor: pointer;
+	width: 109px;
+	color: white;
+	text-decoration: underline;
+	font-weight: bold;
+}
+section#page1 .faq-btn a{
+	color: white;
+}
 section#page1 .title{
 	color: white;
 	font-size: 4.6vw;
@@ -81,15 +95,19 @@ section#page1 .box{
 	padding: 1vw;
 	transform: translateX(2.3vw);
 }
-section#page1 .arrow1{
-	position: absolute;
+section#page1 .arrow-container{
+	position: relative;
+	width: 11%;
+	bottom: 14px;
 	text-align: center;
-	bottom: 6%;
-	width: 100%;
+	margin: auto;
+}
+section#page1 .arrow1{
+	text-align: center;
 }
 section#page1 .arrow1 img{
-	cursor: pointer;
-	width: 8.8%;
+    cursor: pointer;
+    width: 103px;
 }
 section#page2{
 	background: url(../images/section2-back.jpg) no-repeat;
@@ -307,5 +325,8 @@ body.faq .faq-row .views-field-title span{
 body.faq .faq-row .views-field-body {
 	display: none;
 	margin: 9px;
-	width: 93%;
+	width: 100%;
+}
+body.faq .faq-row .views-field-body .field-content{
+	padding-right: 4.4vw;
 }
